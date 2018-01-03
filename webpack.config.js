@@ -1,6 +1,5 @@
 const webpack = require('webpack')
 const path = require('path')
-const ExtractTextPlugin = require('extract-text-webpack-plugin') // 抽取CSS文件插件
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
@@ -19,7 +18,7 @@ module.exports = {
     hot: true,
     inline: true,
     historyApiFallback: true,
-    port: 8088,
+    port: 1919,
   },
   module: {
     loaders: [

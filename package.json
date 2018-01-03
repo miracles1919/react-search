@@ -1,11 +1,11 @@
 {
-  "name": "beichoo",
+  "name": "beichoo-search",
   "version": "1.0.0",
   "description": "beichoo react ",
   "main": "",
   "scripts": {
-    "dev": "webpack --progress --colors --config webpack.dev.config.js",
-    "hot": "webpack-dev-server --progress --profile --colors --hot --config webpack.config.js"
+    "build": "webpack --progress --colors --config webpack.dev.config.js",
+    "dev": "webpack-dev-server --progress --profile --colors --hot --config webpack.config.js"
   },
   "dependencies": {
     "babel-core": "^6.24.0",
