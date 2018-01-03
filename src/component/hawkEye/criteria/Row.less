@@ -1,0 +1,154 @@
+
+.lightSpan {
+  background: #9ED4FF;
+  border-radius: 2px;
+  color: #fff;
+  box-sizing: border-box;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 6px;
+  margin-right: 20px;
+}
+
+.lightSpan:hover {
+  cursor: pointer;
+  background: #3C9FF0;
+}
+
+.work,
+.age,
+.salary {
+  display: flex;
+  position: relative;
+
+  .selectDiv {
+    display: flex;
+  }
+}
+
+.line {
+  width: 8px;
+  height: 1px;
+  background: #999;
+  margin-right: 13px;
+  margin-left: 13px;
+  margin-top: 11.5px;
+}
+
+.workSpan {
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.workSpan:hover {
+  text-decoration: underline;
+  color: #008CFF;
+}
+
+.advanceSpan {
+  margin-left: -8px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+
+  .arrow {
+    display: inline-block;
+    position: absolute;
+    background: url("../img/arrow_down.png") no-repeat;
+    background-size: 100%;
+    width: 9px;
+    height: 9px;
+    top: 8px;
+    left: 135px;
+  }
+
+  .arrowDown {
+    background-image: url("../img/arrow_top.png");
+  }
+}
+
+.selectedLabel {
+  border-radius: 2px;
+  border: 1px solid #008CFF;
+  display: inline-flex;
+  height: 22px;
+  line-height: 22px;
+  margin-right: 20px;
+  margin-bottom: 12px;
+
+  .key {
+    color: #fff;
+    background: #008CFF;
+    padding: 0 5px;
+  }
+
+  .value {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 23px;
+    .close {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      background: url('../img/close.png') no-repeat;
+      background-size: 100%;
+      position: absolute;
+      right: 5px;
+      top: 6.5px;
+      cursor: pointer;
+    }
+  }
+}
+
+.areaDiv {
+  position: relative;
+  cursor: pointer;
+  > div {
+    position: absolute;
+    top: 0;
+  }
+
+  .areaAdd{
+    position: relative;
+    z-index: 5;
+    top: 0;
+  }
+}
+
+.areaDiv:hover {
+  button {
+    border-color: #008CFF;
+    color: #008CFF;
+  }
+}
+
+.multi {
+  display: flex;
+  align-items: center;
+  height: 24px;
+
+  .check {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+.areaAndClear {
+  display: flex;
+}
+
+.light {
+  .check {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+}
+
+.allClear {
+  color: #3C9FF0;
+}
+.allClear:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}

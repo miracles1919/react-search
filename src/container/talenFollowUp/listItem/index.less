@@ -1,0 +1,304 @@
+p,ul,li,dl,dt,dd{
+  padding: 0;
+  margin: 0;
+}
+.resumeList{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  padding: 17px 1.7% 17px 4.9%;
+  cursor: pointer;
+  color: #555555;
+  .checkbox{
+    position:absolute;
+    width:20px;
+    top:66px;
+    left:18px;
+  }
+}
+.resumeList.opened{
+  color: #999999;
+  background: #F7F8F9;
+}
+.resumeList:hover{
+  background: #F7F8F9;
+}
+.resumeList:hover .highEnd{
+  background:  #3C9FF0;
+}
+.resumeList:not(:last-child){
+  border-bottom: 1px solid #F7F8F9;
+}
+.resumeList:after, .resumeCon:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.preference, .highEnd{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 6px;
+  background: #FF8E38;
+}
+.preference{
+  background: #3C9FF0;
+}
+.resumeCon{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.basicInfo, .workExperiences, .resumeScore, .operation{
+  float: left;
+  margin-right: 5.3%;
+  height: 115px;
+}
+.basicInfo{
+  width: 33%;
+}
+.basicInfo .nameLabel:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.basicInfo{
+  position: relative;
+}
+.infoCon, .expPos{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.expPos{
+  left:-30px;
+}
+.basicInfo .nameLabel{
+  height: 20px;
+}
+.basicInfo .nameLabel>span, .basicInfo .nameLabel>div{
+  float: left;
+  margin-right: 12px;
+}
+.basicInfo .nameLabel>span{
+  font-size: 16px;
+  color: #333333;
+  line-height: 16px;
+  font-weight: bold;
+}
+.resumeList.opened .basicInfo .nameLabel>span{
+  color: #999999;
+}
+.basicInfo .nameLabel>div{
+  position: relative;
+  margin-right: 10px;
+}
+.basicInfo .nameLabel>div span{
+  display: block;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #FFFFFF;
+  width: 40px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  cursor: default;
+}
+.basicInfo .nameLabel>div i{
+  position: absolute;
+  left: 0;
+  top: 20px;
+  background: #FFFFFF;
+  border: 1px solid #DEDEDE;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.13);
+  border-radius: 2px;
+  padding: 11px 17px;
+  width: 150px;
+}
+.nameLabel .perLabel>span{
+  background: #3C9FF0;
+}
+.nameLabel .highLabel>span{
+  background: #FF8E38;
+}
+.perLabel i,.highLabel i{
+  font-size: 12px;
+  font-style: normal;
+}
+.info{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 20px;
+}
+.info span{
+  display: inline-block;
+  border-right: 1px solid #999999;
+  line-height: 12px;
+  margin-right: 5px;
+  padding-right: 5px;
+  max-width: 85px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.info p span:last-child{
+  border-right: none;
+  margin-right: 0;
+}
+.labels:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.labels span{
+  float: left;
+  display: block;
+  margin-right: 5px;
+  background: #9ED4FF;
+  border-radius: 2px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  padding: 0 5px;
+  color: #FFFFFF;
+}
+.labels span:hover{
+  background: #3C9FF0;
+}
+
+
+.workExperiences{
+  width: 36%;
+  position: relative;
+}
+.expCon{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.expCon dl{
+  position: relative;
+  padding-left: 105px;
+  line-height: 26px;
+  font-size: 12px;
+}
+.expCon dl dt{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.expCon dd{
+  position: relative;
+  border-left: 1px solid #85CFFF;
+  padding-left: 7px;
+}
+.expCon dd:before{
+  content: '';
+  display: block;
+  position: absolute;
+  left: -4px;
+  top: 10px;
+  width: 5px;
+  height: 5px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #85CFFF;
+  background: #FFFFFF;
+}
+.expCon dd:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.expCon dd span{
+  float: left;
+  display: block;
+  max-width: 70px;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.expCon dd i{
+  float: left;
+  margin: 0 5px;
+}
+.expCon dd span:first-child{
+  max-width: 130px;
+}
+.expCon .active{
+  color: #3C9FF0;
+}
+
+
+.resumeScore{
+  width: 6.4%;
+  line-height: 135px;
+  text-align: center;
+  margin-left: -50px;
+}
+.scoreLabel{
+  display: inline-block;
+  font-size: 12px;
+  color: #3C9FF0;
+  line-height: 12px;
+}
+.scoreLabel .score{
+  font-size: 26px;
+  line-height: 26px;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.select{
+  display:inline-block;
+  position:absolute;
+  top:60px;
+  left:825px;
+  font-size: 12px;
+  color: #555555;
+}
+
+.operation{
+  //width: 8.6%;
+  width: 58px;
+  margin-right: 0;
+  line-height: 150px;
+  text-align: center;
+  float: right;
+}
+.opeCon{
+  display: inline-block;
+  font-size: 12px;
+  line-height: 12px;
+  width: 100%;
+}
+.opeCon span:first-child{
+  display: block;
+  background: #3C9FF0;
+  border-radius: 2px;
+  width: 100%;
+  max-width: 78px;
+  margin: 0 auto 9px auto;
+  color: #FFFFFF;
+  line-height: 30px;
+}
+.opeCon span:first-child:hover{
+  background: #0081FF;
+}
+.opeCon span:last-child:hover{
+  color: #0081FF;
+}
+

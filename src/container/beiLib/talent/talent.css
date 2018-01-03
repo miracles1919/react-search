@@ -1,0 +1,82 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+}
+.container .banner {
+  /*    background: require('./img/banner.png');
+    background-size: 1200px 500px;*/
+  width: 1200px;
+  height: 500px;
+  position: relative;
+}
+.container .banner .bannnerImg {
+  width: 1200px;
+  height: 500px;
+}
+.container .banner .getTalent {
+  position: absolute;
+  left: 130px;
+  top: 366px;
+  background: #FF8E38;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  width: 170px;
+  height: 40px;
+  font-size: 18px;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  line-height: 2.2;
+  text-align: center;
+  cursor: pointer;
+}
+.container .banner .getTalent:hover {
+  background: #FF9C50;
+}
+.container .talentList {
+  width: 1200px;
+}
+.container .pag {
+  background: #fff;
+  height: 84px;
+}
+.container .pag .pagChlid {
+  float: right;
+  margin-top: 37px;
+  margin-right: 10px;
+}
+.nolist {
+  width: 1200px;
+  height: 542px;
+  text-align: center;
+  background: #FFFFFF;
+  padding-top: 100px;
+}
+.nolist .onbannnerImg {
+  margin: 0 auto;
+}
+.nolist .nonTalent {
+  margin-top: 24px;
+  font-size: 18px;
+  color: #454C56;
+  letter-spacing: 1.04px;
+  line-height: 18px;
+  text-align: center;
+}
+.nolist .nonOne {
+  margin-top: 12px;
+  opacity: 0.72;
+  font-size: 14px;
+  color: #454C56;
+  letter-spacing: 0.81px;
+  line-height: 18px;
+  text-align: center;
+}
+.nolist .nonTwo {
+  opacity: 0.72;
+  font-size: 14px;
+  color: #454C56;
+  letter-spacing: 0.81px;
+  line-height: 18px;
+  text-align: center;
+}

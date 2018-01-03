@@ -1,0 +1,181 @@
+.table{
+
+    width: 100%;
+    background: #FDFEFE;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.table thead,tbody{
+
+    background-color: #FDFEFE;
+}
+
+.allChoose {
+    vertical-align: middle;
+    font-size: 14px;
+    color: #454C56;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    text-align: left;
+    position: relative;
+    letter-spacing: 2.36px;
+    line-height: 19px;
+    font-weight: bold;
+    top:-2px;
+}
+
+.table thead tr{
+
+    background: #FDFEFE;
+    border-bottom: 1px solid #F0F0F0;
+
+}
+
+.table tbody tr{
+
+    border-bottom: 1px solid #F0F0F0;
+    background: #FDFEFE;
+}
+
+.table thead tr td {
+    vertical-align: middle;
+    font-size: 14px;
+    color: #1d1d1d;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    text-align: left;
+}
+
+
+.table tbody tr:hover{
+    cursor: pointer;
+}
+
+.table tbody tr td {
+    vertical-align: middle;
+    max-width: 180px;
+    word-wrap: break-word;
+    margin-top: 10px;
+    height: 114px;
+    min-width: 50px;
+    text-align: left;
+    position: relative;
+    padding-right: 30px;
+}
+.retentionAnalysis{
+    background-color: #a9e8d0;
+}
+.titleTd{
+    position: relative;
+    font-size: 14px;
+    color: #454C56;
+    letter-spacing: 2.36px;
+    line-height: 19px;
+    font-weight: bold;
+}
+/*.titleTd:before{
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 8px;
+    position: absolute;
+    margin-top: 4px;
+    background: #C4CED8;
+    margin-right: 7px;
+    left: -16px;
+}*/
+
+.table thead tr td:nth-child(2):before{
+    background: none;
+}
+
+
+/**
+复选框样式
+ */
+.unChoose {
+    background: #FFFFFF;
+    border: 1px solid #979FAA;
+    border-radius: 4px;
+    width:16px;
+    height:16px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 10px;
+    position: relative;
+    top:4px;
+}
+
+.choose {
+    border: 1px solid #3C9FF0;
+    width:16px;
+    height:16px;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+    background: #3C9FF0;
+    top:4px;
+}
+
+.chooseIn {
+    width: 10px;
+    height:10px;
+    display: inline-block;
+    /*   background: #4492eb;*/
+    cursor: pointer;
+    color: #fff;
+    position: absolute;
+    font-size:10px;
+    left:2px;
+    top:1px;
+}
+
+.chooseIn:after {
+    opacity: 1;
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 7px;
+    background: transparent;
+    top: 2px;
+    right: 1px;
+    border: 2px solid #fff;
+    border-top: none;
+    border-left: none;
+    -webkit-transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    transform: rotate(35deg);
+}
+
+.unChooseIn {
+    background: #ffffff;
+    display: none;
+}
+
+.myRadios {
+    display: inline-block;
+}
+
+.myCheckBox {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bodyTr{
+    position: relative;
+}
+
+.bodyTr:hover{
+
+    background: #f5f5f5;
+    cursor: pointer;
+}
+

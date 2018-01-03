@@ -1,0 +1,47 @@
+.dropdown{
+  background: #fff;
+  position: relative;
+
+  .select{
+    height: 22px;
+    line-height: 22px;
+    box-sizing: border-box;
+    border: 1px solid #e5e7e9;
+    text-align: center;
+    color: #999;
+    cursor: pointer;
+  }
+
+}
+
+.trigger{
+
+  border: 1px solid #fff;
+  position: absolute;
+  top: 21px;
+  overflow: auto;
+  box-sizing: border-box;
+  background: #fff;
+  z-index: 10;
+
+  .item{
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .item:hover{
+    color: #008CFF;
+    background: #F7F8F9;
+  }
+}
+
+.dropdown:hover{
+  .select{
+    color: #008CFF;
+    border-color: #008CFF;
+  }
+
+  .trigger{
+    border-color: #008CFF;
+  }
+}

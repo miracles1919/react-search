@@ -1,0 +1,175 @@
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #C4CED8;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #C4CED8;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #C4CED8;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #C4CED8;
+}
+
+.libResource{
+  width: 100%;
+  padding: 23px 19px 17px 31px;
+  background: #ffffff;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.05);
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  .btnsGroup{
+    float: left;
+    font-size: 14px;
+    color: #111111;
+    .btn{
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      float: left;
+      border: 1px solid transparent;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);
+      border-radius: 4px;
+      width: 130px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      margin-right: 30px;
+      cursor: pointer;
+      position: relative;
+      -webkit-transition: all .4s;
+      -moz-transition: all .4s;
+      -ms-transition: all .4s;
+      -o-transition: all .4s;
+      transition: all .4s;
+      .mark{
+        position: absolute;
+        top: -5px;
+        right: -12px;
+        background: #FF8E38;
+        border-radius: 1px;
+        text-align: center;
+        width: 46px;
+        line-height: 18px;
+        color: #ffffff;
+        font-size: 12px;
+        font-style: normal;
+        &:after{
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 0;
+          border: 7px solid transparent;
+          border-left-color: #FF8E38;
+          bottom: -4px;
+          left: 2px;
+        }
+      }
+      &:hover, &.active{
+        border: 1px solid #008CFF;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);
+        color: #008CFF;
+      }
+    }
+    &:after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+  .searchGroup{
+    float: right;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 420px;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    position: relative;
+    .close{
+      position: absolute;
+      display: block;
+      left: 350px;
+      top: 12px;
+      width: 15px;
+      height: 15px;
+      z-index: 1;
+      cursor: pointer;
+      img{
+        display: block;
+        width: 100%;
+      }
+    }
+    .inputCon:after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .searchInput{
+      float: left;
+      display: block;
+      outline: none;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      border: 1px solid #E7E7E7;
+      border-right: none;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      width: 370px;
+      height: 40px;
+      padding: 0;
+      padding-right: 20px;
+      font-size: 14px;
+      text-indent: 12px;
+      -webkit-transition: all .4s;
+      -moz-transition: all .4s;
+      -ms-transition: all .4s;
+      -o-transition: all .4s;
+      transition: all .4s;
+      &:hover, &:focus{
+        border-color: #008CFF;
+      }
+    }
+    .searchBtn{
+      float: right;
+      width: 50px;
+      line-height: 40px;
+      text-align: center;
+      background: #008CFF;
+      border-radius: 0 4px 4px 0;
+      overflow: hidden;
+      color: #ffffff;
+      cursor: pointer;
+      img{
+        width: 30px;
+        margin: 0 auto;
+        position: relative;
+        top: 5px;
+      }
+    }
+  }
+  .addCareerCon{
+    float: right;
+    .addCareer{
+      display: block;
+      font-size: 14px;
+      color: #FFFFFF;
+      width: 130px;
+      line-height: 40px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.10);
+      border-radius: 4px;
+      background: #008CFF;
+      cursor: pointer;
+      text-align: center;
+    }
+  }
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+}

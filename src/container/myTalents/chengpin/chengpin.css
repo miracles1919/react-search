@@ -1,0 +1,665 @@
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.wrap {
+  font-size: 14px;
+  overflow: auto;
+}
+
+.left {
+  float: left;
+  width: 190px;
+  height: 510px;
+  margin-right: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.leftFixed {
+  float: left;
+  width: 190px;
+  height: 510px;
+  margin-right: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: auto;
+  position: fixed;
+  top: 60px;
+  z-index: 1;
+  border-top: 20px solid #f4f5f6;
+}
+
+.right {
+  float: left;
+  width: 990px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 50px;
+}
+
+.rightMargin {
+  float: left;
+  width: 990px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-left: 210px;
+}
+
+.button {
+  font-size: 14px;
+  width: 170px;
+  height: 40px;
+  margin: 10px;
+  color: #fff;
+  background-color: #008CFF;
+  border-radius: 4px;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+
+.button:hover {
+  color: #008CFF;
+  background-color: #fff;
+  border: 1px solid #008CFF;
+}
+
+.jobList {
+  height: 90px;
+  cursor: pointer;
+}
+
+.jobListClick {
+  height: 90px;
+  background: #f7f8f9;
+  cursor: pointer;
+}
+
+/* .jobList:hover {
+  background-color: #F7F8F9;
+} */
+
+.box {
+  box-sizing: border-box;
+  margin: 0px 0px 0px 16px;
+  height: 90px;
+  padding-top: 24px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid #E7E7E7;
+}
+
+.jobName {
+  display: inline-block;
+  width: 122px;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+}
+
+.jobEdit {
+  display: inline-block;
+  width: 31px;
+  text-decoration: none;
+  text-align: right;
+  color: #17ACFF;
+}
+
+.line {
+  display: inline-block;
+  height: 10px;
+  border-right: 1px solid #D8D8D8;
+  margin: 0px 5px;
+}
+
+.age {
+  display: inline-block;
+  width: 40px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+}
+
+.salary {
+  display: inline-block;
+  width: 52px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+}
+
+.degree {
+  display: inline-block;
+  width: 37px;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+}
+
+.title {
+  height: 60px;
+  border-bottom: 1px solid #E5E7E9;
+  background-color: #fff;
+}
+
+.titleFixed {
+  height: 60px;
+  border-bottom: 1px solid #E5E7E9;
+  position: fixed;
+  top: 60px;
+  background-color: #fff;
+  z-index: 1;
+  width: 990px;
+  border-top: 20px solid #f4f5f6;
+}
+
+.checkboxContainer {
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  padding: 22px;
+  vertical-align: middle;
+}
+
+.buttonWrap {
+  background: #fff;
+}
+
+.listWrap {
+  height: 450px;
+  overflow: auto
+}
+
+.titleLeft {
+  display: inline-block;
+  color: #1D1D1D;
+  font-size: 14px;
+  width: 326px;
+  box-sizing: border-box;
+  font-size: bold;
+}
+
+.titleLeftNoTag {
+  display: inline-block;
+  color: #1D1D1D;
+  font-size: 14px;
+  width: 326px;
+  height: 150px;
+  box-sizing: border-box;
+  padding-top: 20px
+}
+
+.titleMiddle {
+  display: inline-block;
+  color: #1D1D1D;
+  font-size: 14px;
+  width: 504px;
+  font-weight: bold;
+}
+
+.titleRight {
+  display: inline-block;
+  color: #1D1D1D;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.titleLeftName {
+  height: 44px;
+  line-height: 44px;
+  font-size: 16px;
+  color: #333333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+  display: inline-block;
+  width: 200px;
+  font-weight: bold;
+}
+
+.titleLeftAd {
+  display: inline-block;
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+}
+
+.titleLeftDetail {
+  font-size: 12px;
+  color: #555555;
+  line-height: 20px;
+}
+
+.titleLeftContentLength {
+  width: 100px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+  cursor: pointer;
+}
+
+.titleLeftSeniority {
+  width: 70px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+}
+
+.titleLeftSalary {
+  max-width: 70px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+}
+
+.titleLeftUniversity {
+  max-width: 75px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+}
+
+.titleLeftcollege {
+  max-width: 75px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+}
+
+.content {
+  height: 150px;
+  cursor: pointer;
+  border-bottom: 1px solid #E5E7E9;
+}
+
+.contentInner {
+  margin-top: 61px;
+}
+
+.titleLeftTag {
+  background-color: #9ED4FF;
+  border-radius: 2px;
+  margin-right: 5px;
+  color: #fff;
+  padding: 0 3px;
+  font-size: 12px
+}
+
+.titleLeftTag:hover {
+  background: #008CFF;
+}
+
+.leftBox {
+  vertical-align: top;
+  height: 150px;
+  width: 60px;
+  display: inline-block;
+  padding: 67px 22px;
+  box-sizing: border-box;
+}
+
+.experience {
+  color: #555555;
+  font-size: 12px;
+}
+
+.tiemFromTo {
+  border-right: 1px solid #9ED4FF;
+  position: relative;
+  padding-right: 3px;
+  margin-right: 10px;
+  display: inline-block;
+  width: 115px;
+  vertical-align: bottom;
+  line-height: 26px;
+}
+
+.tiemFromTo:after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: #FFFFFF;
+  border: 1px solid #9ED4FF;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  left: 115px;
+}
+
+.company {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+  max-width: 145px;
+  line-height: 26px;
+}
+
+.duty {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+  width: 145px;
+  line-height: 26px;
+}
+
+.titleMiddleDetail {
+  display: table-cell;
+  color: #1D1D1D;
+  font-size: 14px;
+  width: 504px;
+  height: 150px;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.titleRightDetail {
+  display: inline-block;
+  color: #1D1D1D;
+  font-size: 14px;
+  height: 150px;
+  box-sizing: border-box;
+  padding-top: 28px;
+  color: #3C9FF0;
+  vertical-align: top;
+}
+
+.score {
+  text-align: center;
+  font-size: 42px;
+}
+
+.scoreDescribe {
+  text-align: center;
+  font-size: 12px;
+}
+
+.deleteResume {
+  width: 96px;
+  height: 30px;
+  border-radius: 4px;
+  background: #fff;
+  color: #008CFF;
+  border: 1px solid #008CFF;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.activeTalent {
+  width: 96px;
+  height: 30px;
+  border-radius: 4px;
+  background: #008CFF;
+  color: #fff;
+  cursor: pointer;
+}
+
+.deleIcon {
+  float: right;
+  font-size: 25px;
+  margin-right: 30px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.notionContact {
+  background: #fff;
+  width: 560px;
+  z-index: 9999999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -172px;
+  margin-left: -320px;
+  text-align: center;
+  height: 344px;
+  opacity: 1;
+}
+
+.shade {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+}
+
+.ConfirmInshade {
+  width: 180px;
+  height: 50px;
+  border-radius: 3px;
+  background-color: #008CFF;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.CancelInshade {
+  width: 180px;
+  height: 50px;
+  border-radius: 3px;
+  border: 1px solid #008CFF;
+  margin-right: 20px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.confirmIntext {
+  font-size: 16px;
+  text-align: center;
+  line-height: 16px;
+  margin-bottom: 116px;
+}
+
+.deleteInText {
+  font-size: 24px;
+  text-align: center;
+  line-height: 24px;
+  margin-top: 57px;
+  margin-bottom: 11px;
+}
+
+.protectInText {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 24px;
+  margin-top: 47px;
+  margin-bottom: 11px;
+}
+
+.protectInText1 {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 24px;
+  margin-top: 10px;
+  margin-bottom: 11px;
+}
+
+.protectInText2 {
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 60px;
+  line-height: 60px;
+}
+
+.protectInText22 {
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 30px;
+  background: #ab01fa;
+  display: inline-block;
+  border-radius: 25px;
+  height: 35px;
+  line-height: 35px;
+  width: 85px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.oneNone {
+  height: 587px;
+  width: 990px;
+  background: #fff;
+  overflow: hidden;
+  float: right;
+}
+
+.imgContainer {
+  width: 200px;
+  height: 220px;
+  margin: 38px 395px 329px 395px;
+  margin-bottom: 18px;
+}
+
+.imgContainer1 {
+  width: 200px;
+  height: 190px;
+  margin: 50px 500px 58px 500px;
+}
+
+.spriteImg {
+  background: url('../../../img/blank.png');
+  display: inline;
+  width: 100%;
+  height: 220px;
+  float: left;
+  background-position: -438px 11px;
+  background-size: 320%;
+}
+
+.spriteImg1 {
+  background: url('../../../img/blank.png');
+  width: 100%;
+  height: 220px;
+  float: left;
+  background-position: -11px 11px;
+  block-size: 130%;
+  background-size: 320%;
+}
+
+.noRecommond {
+  color: #454C56;
+  font: 18px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.Toosimple {
+  color: #454C56;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 50px;
+  opacity: 0.72;
+}
+
+.complete {
+  width: 170px;
+  height: 40px;
+  border: 1px solid #008CFF;
+  margin: 0 auto;
+  color: #008CFF;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.complete:hover {
+  color: #fff;
+  background: #008CFF;
+  cursor: pointer;
+}
+
+.bothNone {
+  width: 1200px;
+  height: 542px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.noResume {
+  color: #454C56;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 50px;
+  opacity: 0.72;
+}
+
+.addJob {
+  width: 170px;
+  height: 40px;
+  border: 1px solid #008CFF;
+  margin: 0 auto;
+  color: #008CFF;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.addJob:hover {
+  color: #fff;
+  background: #008CFF;
+  cursor: pointer;
+}
+
+.titleLeftAge {
+  display: inline-block;
+  width: 14px;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.notComplete {
+  font-size: 12px;
+  color: red;
+  margin-top: -15px;
+}
+
+.times {
+  font-size: 24px;
+  float: right;
+  margin-right: 20px;
+  color: #989898;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.activeIcon {
+  margin-left: -5px;
+  margin-right: 20px;
+  width: 25px;
+  height: 25px;
+  margin-bottom: -6px;
+}

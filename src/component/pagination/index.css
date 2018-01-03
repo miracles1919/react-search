@@ -1,0 +1,61 @@
+.pagination{
+  text-align: center;
+}
+.pagination:after, .pages:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.pages, .totals, .codeIn{
+  display: inline-block;
+  vertical-align: middle;
+}
+.totals{
+  margin-left: 6px;
+  font-size: 12px;
+  color: #454C56;
+}
+.codeIn{
+  margin-left: 16px;
+}
+.codeIn .inputIn{
+  border: 1px solid #E7E7E7;
+  border-radius: 3px;
+  width: 46px;
+  height: 24px;
+  background: transparent;
+  margin: 0 5px;
+  text-indent: 6px;
+  font-size: 12px;
+  color: #454C56;
+  transition: all 0.1s ease;
+}
+.codeIn .inputIn:focus{
+  border-color: #008CFF;
+}
+.pages li{
+  float: left;
+  cursor: pointer;
+  display: block;
+  line-height: 24px;
+  font-size: 12px;
+  color: #454C56;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 26px;
+  text-align: center;
+  border: 1px solid #E7E7E7;
+  border-radius: 3px;
+  transition: all 0.1s ease;
+}
+.pages li:first-child, .pages li:last-child{
+  width: 64px;
+}
+.pages li:not(:first-child){
+  margin-left: 5px;
+}
+.pages li.active, .pages li:first-child:hover, .pages li:last-child:hover{
+  color: #008CFF;
+  border-color: #008CFF;
+}
