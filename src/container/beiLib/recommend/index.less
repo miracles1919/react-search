@@ -48,6 +48,18 @@
         -ms-transition: all .2s;
         -o-transition: all .2s;
         transition: all .2s;
+        i{
+          display: inline-block;
+          vertical-align: middle;
+          width: 16px;
+          height: 16px;
+          position: relative;
+          top: -1px;
+          img{
+            width: 100%;
+            display: block;
+          }
+        }
         &:hover{
           color: #008CFF;
           background: #ffffff;
@@ -94,14 +106,20 @@
           color: #777777;
           span{
             float: left;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
             &.baseYear{
-              width: 52px;
+              max-width: 50px;
             }
             &.baseSalary{
-              width: 52px;
+              max-width: 50px;
             }
             &.baseDegree{
-              width: 24px;
+              max-width: 24px;
             }
             &:not(:last-child){
               margin-right: 5px;
@@ -136,6 +154,7 @@
       position: fixed;
       top: 64px;
       left: (50vm - 600px);
+      border-top: 20px solid #f4f5f6;
     }
   }
   .recommendResumes{
@@ -159,7 +178,7 @@
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        padding: 17px 1.7% 17px 4.9%;
+        padding: 17px 16px 17px 48px;
         font-size: 14px;
         color: #1D1D1D;
         line-height: 14px;
@@ -169,7 +188,7 @@
         .titlePart1{
           float: left;
           width: 33%;
-          margin-right: 5.3%;
+          //margin-right: 5.3%;
           .baseZh{
             float: left;
             border-right: 1px solid #E7E7E7;
@@ -188,7 +207,7 @@
         .titlePart2{
           float: left;
           width: 36%;
-          margin-right: 5.3%;
+          margin-right: 10.6%;
         }
         .titlePart3{
           float: left;
@@ -206,6 +225,7 @@
           top: 64px;
           right: calc(50vm - 600px);
           z-index: 10;
+          border-top: 20px solid #f4f5f6;
         }
         &:after{
           content: '';
@@ -325,14 +345,21 @@
       margin-top: 30px;
     }
   }
-  img{
+  .imgCon{
+    display: inline-block;
     vertical-align: middle;
     margin-right: 10px;
+    width: 18px;
+    height: 18px;
     &+span{
       color: #454C56;
       font-size: 16px;
       margin-right: 20px;
     }
+  }
+  img{
+    width: 100%;
+    display: block;
   }
   a, .btn{
     -webkit-box-sizing: border-box;

@@ -1,9 +1,9 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'react-router'
 import styles from './Header.less'
 
 const Header = ({ children }) => {
-
   const nav = [{
     name: '工作台',
     link: 'work',
@@ -47,6 +47,10 @@ const Header = ({ children }) => {
 
     </div>
   )
+}
+
+Header.propTypes = {
+  children: PropTypes.object,
 }
 
 export default Header

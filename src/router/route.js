@@ -23,8 +23,8 @@ const TalLib = (location, cb) => {
 
 const Talent = (location, cb) => {
   require.ensure([], require => {
-    cb(null, require('../container/beiLib/talent').default)
-  }, 'talent')
+    cb(null, require('../container/beiLib/talentJournal').default)
+  }, 'talentJournal')
 }
 
 const HawkEye = (location, cb) => {
