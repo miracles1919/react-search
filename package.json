@@ -8,6 +8,7 @@
     "dev": "webpack-dev-server --progress --profile --colors --hot --config webpack.config.js"
   },
   "dependencies": {
+    "axios": "^0.17.1",
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
     "babel-plugin-import": "^1.1.1",
@@ -71,6 +72,7 @@
     "json-loader": "^0.5.7",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
+    "mockjs": "^1.0.1-beta3",
     "moment": "^2.15.1",
     "node-sass": "^4.5.3",
     "open-browser-webpack-plugin": "0.0.2",

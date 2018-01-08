@@ -25,9 +25,12 @@ const VERSION_B = '/1.0/'
 
 const API_PATH = `${API_HOST}/1.0`
 
+const API = 'API'
+
 module.exports = {
   cookieName,
   API_PATH,
   HOSTS,
   VERSION_B,
+  API,
 }

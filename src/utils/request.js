@@ -8,7 +8,7 @@ const request = (options) => {
   return fetch(url, {
     method,
     body: JSON.stringify(params),
-  }).then(res => res.json()).then((res) => {
+  }).then(res => { console.log(res); return res.json() }).then((res) => {
     const [code, ...data] = [...res]
 
     if (code === 0) {
@@ -26,5 +26,6 @@ const request = (options) => {
     })
   })
 }
+
 
 export default request
